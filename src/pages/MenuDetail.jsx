@@ -29,9 +29,9 @@ const MenuDetail = () => {
     <div>
       <Navbar/>
 
-      <div className="flex flex-col justify-center  w-[500px] text-center mx-auto mt-[100px] mb-[100px]">
-        <h1 className="font-bold mb-4">{menu?.name}</h1>
-        <p className="mb-6">{menu?.description}</p>
+      <div className="w-[300px] md:w-[500px] text-center m-auto mt-[100px] mb-[100px]">
+        <h1 className="font-bold text-sm md:text-2xl mb-4">{menu?.name}</h1>
+        <p className="mb-6 text-sm md:text-xl">{menu?.description}</p>
         <img src={menu?.imageUrl} className="w-[200px] mx-auto" />
       </div>
 

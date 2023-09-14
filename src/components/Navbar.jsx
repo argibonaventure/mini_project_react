@@ -69,7 +69,7 @@ const Navbar = () => {
           <li className="p-4 border-b border-white text-white">
             {token ? 
               <div>
-                <div className="mr-0 mb-5 border-b border-white">
+                <div className="mr-0 mb-5 border-b border-white border-dashed">
                   <Link to={"/voucher"}><Voucher /></Link> 
                 </div>
                 <div>
