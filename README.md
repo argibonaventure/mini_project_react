@@ -1,19 +1,13 @@
 Dear Mas Muhsin,
 
-I apologize that I couldn't finish this project appropriately. I need to understand the logic one by one while implementing the codes to give me fully understanding on what I'm doing. I am a slow learner and had limited time to do this. I will finish this project soon by tomorrow or the latest this end of week. Thank you so much.
+I apologize that I couldn't finish this project appropriately. I need to understand the logic one by one while implementing the codes to fully understand what I'm doing. I am a slow learner of this new stuff and had limited time to do this. I will finish this project by tomorrow or, at the latest the end of the week. Thank you so much.
 
+Library:
+- Tailwind CSS
+- Flowbite tailwind component for the modal
+- React Icons
 
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-- Using Tailwind CSS
-- Using flowbite tailwind component for the modal
+note :
+- I use conditional logic to replace the navbar button with "member" (navbar with voucher button + logout button) navbar after login.
+  it still didn't go as I wished, so you need to refresh or move to other pages first after login.
 
