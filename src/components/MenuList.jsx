@@ -31,14 +31,14 @@ const MenuList = () => {
         };
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-wrap mb-5">
             {menus.map((item,key) => 
-            <div key={key} className="flex flex-col gap-4 text-center mt-5 border border-black w-[300px] mx-auto">
+            <div key={key} className="flex flex-col gap-4 text-center mt-5 border border-red-800 w-[300px] mx-auto">
                 
                 <img src={item.imageUrl} className="w-[200px] mx-auto p-2"/>
-                <h3 className="font-bold">{item.name}</h3>
+                <h3 className="font-bold text-red-800">{item.name}</h3>
                 <p>{item.description}</p>
-                <button onClick={() => handleDetail(item.id)} className="font-bold">Detail</button>
+                <button onClick={() => handleDetail(item.id)} className="font-bold border border-red-800 ">Detail</button>
 
             </div>
                 )}

@@ -6,7 +6,7 @@ import Logout from "./Logout";
 import Voucher from "./Voucher";
 import { Link } from "react-router-dom";
 
-const NavbarNonMember = () => {
+const Navbar = () => {
   const [nav, setNav] = useState(true);
 
   const token = localStorage.getItem("token");
@@ -30,16 +30,16 @@ const NavbarNonMember = () => {
           <li className="p-4">MENU</li>
         </Link>
         <li className="p-4">
-          {token ? (
+          {token ? 
             <div className="flex gap-10">
               <Link to={"/voucher"}>
                 <Voucher />
               </Link>
               <Logout />
             </div>
-          ) : (
+           : 
             <AuthPage />
-          )}
+          }
         </li>
       </ul>
 
@@ -58,7 +58,7 @@ const NavbarNonMember = () => {
         }
       >
         <div className="w-full flex m-4 md:hidden">
-          <h1 className="w-full text-3xl font-bold text-white m-4">
+          <h1 className="w-full text-3xl font-light text-white italic m-4">
             Le Mudo Café
           </h1>
         </div>
@@ -67,7 +67,7 @@ const NavbarNonMember = () => {
           <Link to={"/"} ><li className="p-4 border-b border-white text-white">Home</li></Link> 
           <Link to={"/menu"}><li className="p-4 border-b border-white text-white">Menu</li></Link> 
           <li className="p-4 border-b border-white text-white">
-            {token ? (
+            {token ? 
               <div>
                 <div className="mr-0 mb-5 border-b border-white">
                   <Link to={"/voucher"}><Voucher /></Link> 
@@ -76,9 +76,9 @@ const NavbarNonMember = () => {
                   <Logout />
                 </div>
               </div>
-            ) : (
+             : 
               <AuthPage />
-            )}
+            }
           </li>
         </ul>
       </div>
@@ -86,4 +86,4 @@ const NavbarNonMember = () => {
   );
 };
 
-export default NavbarNonMember;
+export default Navbar;

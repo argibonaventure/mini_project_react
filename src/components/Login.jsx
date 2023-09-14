@@ -2,11 +2,12 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-
+  
   const handleChangeUsername = (e) => {
     setUsername(e.target.value);
   };
@@ -15,8 +16,10 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = () => {
-    const payload = {
+  const handleSubmit = () => {   
+   navigate("/")
+
+      const payload = {
       username: username,
       password: password,
     };
@@ -25,13 +28,13 @@ const Login = () => {
       .then((res) => {
         console.log(res);
         const token = res.data?.data?.token;
-        localStorage.setItem("token", token);
-        localStorage.getItem(token);
+        localStorage.setItem("token", token);    
       })
       .catch((err) => {
         console.log(err);
-      });
-      navigate("/voucher");
+      })
+
+     
     
 
 

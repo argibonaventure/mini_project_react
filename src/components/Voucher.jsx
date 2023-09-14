@@ -3,7 +3,7 @@ import React from "react";
 const Voucher = () => {
   return (
     <div>
-      <button>VOUCHER</button>
+      <button>VOUCHER</button> 
     </div>
   );
 };

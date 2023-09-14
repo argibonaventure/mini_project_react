@@ -6,8 +6,8 @@ const Logout = () => {
 
 
   const handleLogout = () => {
-    localStorage.clear();
-    navigate("/menu");
+    localStorage.clear()
+    navigate("/")
     
   };
 
