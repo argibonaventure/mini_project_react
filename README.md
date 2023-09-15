@@ -4,12 +4,16 @@ I apologize that I couldn't finish this project appropriately. I need to underst
 
 Library:
 
-Tailwind CSS
-Flowbite tailwind component for the modal
-React Icons
+- Tailwind CSS
+- Flowbite tailwind component for the modal
+- React Icons
+
+Direction:
+I implement protected route for Team Resource Page that can be accessed in footer component
 
 
-note/issues :
+
+Note/Issues :
 
 I use conditional logic to replace the navbar button with "member" (navbar with voucher button + logout button) navbar after login. it still didn't go as I wished, so you need to refresh or move to other pages first after login.
 
