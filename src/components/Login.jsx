@@ -2,12 +2,11 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  
+
   const handleChangeUsername = (e) => {
     setUsername(e.target.value);
   };
@@ -16,10 +15,10 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = () => {   
-   navigate("/")
+  const handleSubmit = () => {
+    navigate("/");
 
-      const payload = {
+    const payload = {
       username: username,
       password: password,
     };
@@ -28,16 +27,11 @@ const Login = () => {
       .then((res) => {
         console.log(res);
         const token = res.data?.data?.token;
-        localStorage.setItem("token", token);    
+        localStorage.setItem("token", token);
       })
       .catch((err) => {
         console.log(err);
-      })
-
-     
-    
-
-
+      });
   };
 
   console.log(username, password);
@@ -49,19 +43,19 @@ const Login = () => {
           onChange={handleChangeUsername}
           className="rounded"
           type="text"
+          name="text"
           placeholder="username"
         />
         <input
           onChange={handleChangePass}
           className="rounded"
           type="password"
+          name="password"
           placeholder="password"
         />
       </div>
       <div className="border border-red-800 w-[200px] rounded mx-auto mb-[50px] text-xl text-center bg-red-800 text-white">
-        <button onClick={handleSubmit} className="z-10">
-          SIGN IN
-        </button>
+        <button onClick={handleSubmit}>SIGN IN</button>
       </div>
     </div>
   );

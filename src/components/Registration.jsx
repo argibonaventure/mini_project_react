@@ -20,7 +20,7 @@ const Registration = () => {
 
   const handleChangeRoleId = (e) => {
     setRoleId(e.target.value);
-  }
+  };
 
   const handleSubmit = () => {
     const payload = {
@@ -50,17 +50,22 @@ const Registration = () => {
           onChange={handleChangeUsername}
           className="rounded"
           type="text"
+          name="text"
           placeholder="username"
         />
         <input
           onChange={handleChangePass}
           className="rounded"
           type="password"
+          name="password"
           placeholder="password"
         />
-         <input
+        <input
           onChange={handleChangeRoleId}
           className="rounded"
+          name="number"
+          min={1}
+          max={2}
           type="number"
           placeholder="nomer id (1 = Admin, 2 = Karyawan)"
         />
