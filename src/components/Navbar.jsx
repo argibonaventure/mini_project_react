@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1440px] mx-auto px-4 bg-red-800 sticky top-0">
+    <div className="flex justify-between items-center h-24 max-w-[1440px] mx-auto px-4 bg-red-800 sticky top-0 z-10">
       <div className="flex">
         <h1 className="w-full text-3xl font-light text-white italic">
           Le Mudo Café

@@ -17,7 +17,7 @@ Note/Issues :
 
 I use conditional logic to replace the navbar button with "member" (navbar with voucher button + logout button) navbar after login. it still didn't go as I wished, so you need to refresh or move to other pages first after login.
 
-I still had problem when the navbar is on the homepage video that the navbar button can't be accessed. for the better experience, I suggest you to move to other pages or don't scroll the homepage when accessing the navbar button.
+I still had problem when the navbar is on the homepage video that some of navbar buttons can't be accessed. for the better experience, I suggest you to move to other pages or don't scroll the homepage when accessing the navbar button.
 
 
 according to those issues, I commit to fix it immediately.

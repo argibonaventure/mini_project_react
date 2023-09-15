@@ -8,7 +8,7 @@ const Body = () => {
         BEST SELLING MENU
       </h1>
 
-      <div className="flex flex-col ml-[50px] gap-4  md:flex-row md:justify-around mb-10 mt-5">
+      <div className="flex flex-col justify-center items-center gap-4  md:flex-row md:justify-around mb-10 mt-5 ">
         <div>
           <img src="src/assets/Menu-1.jpeg" className="h-[200px] w-[300px]" />
         </div>

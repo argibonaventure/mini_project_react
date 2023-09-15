@@ -30,7 +30,7 @@ const MenuDetail = () => {
       <Navbar/>
 
       <div className="w-[300px] md:w-[500px] text-center m-auto mt-[100px] mb-[100px]">
-        <h1 className="font-bold text-sm md:text-2xl mb-4">{menu?.name}</h1>
+        <h1 className="font-bold text-xl md:text-2xl mb-4 text-red-800">{menu?.name}</h1>
         <p className="mb-6 text-sm md:text-xl">{menu?.description}</p>
         <img src={menu?.imageUrl} className="w-[200px] mx-auto" />
       </div>

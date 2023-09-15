@@ -59,7 +59,7 @@ const Login = () => {
         />
       </div>
       <div className="border border-red-800 w-[200px] rounded mx-auto mb-[50px] text-xl text-center bg-red-800 text-white">
-        <button onClick={handleSubmit} className="">
+        <button onClick={handleSubmit} className="z-10">
           SIGN IN
         </button>
       </div>
