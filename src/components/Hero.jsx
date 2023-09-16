@@ -7,7 +7,7 @@ const Hero = () => {
 
     <div>
 
-       <video className="w-[100%]" src="src/assets/video.c1873e8.mp4" loop autoPlay muted/>
+       <img className="w-[100%] h-full" src="src/assets/henshin-wagyu.jpg" />
 
     </div>
 

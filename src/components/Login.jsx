@@ -1,11 +1,15 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [err, setErr] = useState("");
+
   const navigate = useNavigate();
+
+  const Loggedin = true;
 
   const handleChangeUsername = (e) => {
     setUsername(e.target.value);
@@ -30,7 +34,8 @@ const Login = () => {
         localStorage.setItem("token", token);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err.message);
+        setErr(err.message);
       });
   };
 
@@ -38,6 +43,13 @@ const Login = () => {
 
   return (
     <div>
+      {Loggedin
+        ? !!err.length && (
+            <h1 className="font-bold text-center mt-2 text-blue-600">
+              ({err}) <p>Try Again!</p>
+            </h1>
+          )
+        : handleSubmit}
       <div className="grid grid-rows-2 gap-4 p-20">
         <input
           onChange={handleChangeUsername}
